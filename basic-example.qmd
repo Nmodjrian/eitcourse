@@ -1,0 +1,17 @@
+---
+title: "Untitled"
+format: html
+---
+
+---
+title: "My First Quarto File"
+format: html
+---
+
+# Hello Quarto
+
+This is a test of Quarto rendering.
+
+```{r}
+x <- 1:10
+mean(x)
