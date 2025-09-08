@@ -1,28 +1,20 @@
+cat > basic-example.qmd << EOL
+---
+title: "My First Quarto File"
+format: html
+---
 
-```{python}
-#| eval: false
-x = 1
-x
-# IGOT-ULisboa - Instituto de Geografia e Ordenamento do Território da Universidade de Lisboa
-import geopandas as gpd
-import shapely
+# Hello Quarto
 
-# Create a shapely Point geometry for IGOT
-# 38.7493402,-9.155268
-# Note: (longitude, latitude)
-igot_point = shapely.Point(-9.155268, 38.7493402)  
+This is a test of Quarto rendering.
 
-# Create a GeoSeries from the point
-igot_geom = gpd.GeoSeries([igot_point], crs="EPSG:4326")
+\`\`\`{r}
+x <- 1:10
+mean(x)
+\`\`\`
 
-# Combine geometry with attributes in a dictionary
-igot_data = {
-    'name': ['IGOT-ULisboa'],
-    'geometry': igot_geom
-}
-
-# Create a GeoDataFrame
-igot_layer = gpd.GeoDataFrame(igot_data)
-igot_layer
-igot_layer.explore()
-```
+\`\`\`{python}
+import numpy as np
+np.mean(np.arange(1,11))
+\`\`\`
+EOL
