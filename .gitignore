@@ -1,0 +1,9 @@
+docs
+
+/.quarto/
+.Rproj.user
+_freeze/
+*_cache/
+*_files/
+cache/
+.Rhistory

@@ -1,0 +1,14 @@
+---
+title: "Course Materials"
+description-meta: "Access course materials including datasets and slides for the Tools and Skills for Reproducible Transport Research course."
+pagetitle: "Course Materials"
+---
+
+All materials for each session are listed and can be accessed through the [schedule](schedule.qmd).
+
+[Datasets](data/)
+
+[Slides](slides/)
+
+
+

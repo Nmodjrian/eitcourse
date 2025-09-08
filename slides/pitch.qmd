@@ -1,0 +1,95 @@
+---
+title: Tools and Skills for Reproducible Transport Research
+subtitle: EIT course proposal
+format: 
+  # Install plugin with quarto install extension grantmcdermott/quarto-revealjs-clean
+  clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Robin Lovelace
+    orcid: 0000-0001-5679-6536
+    email: r.lovelace@leeds.ac.uk
+    affiliations: University of Leeds, Active Travel England
+    role: Course leader
+  - name: Rosa Félix
+    orcid: 0000-0002-5642-6006
+    affiliations: University of Lisbon
+    role: Course co-leader
+date: 2024-10-15
+---
+
+# Introduction {background-color="#40666e"}
+
+## About me and my work
+
+::::::: columns
+:::: {.column width="40%"}
+::: incremental
+-   Professor of Transport Data Science
+-   Work with government
+-   Focus on impact
+-   R package developer and data scientist
+-   New methods for more reproducible, data-driven and participatory transport planning
+:::
+::::
+
+:::: {.column width="60%"}
+::: {layout="[[1,2], [1]]"}
+![](https://r.geocompx.org/images/cover.png)
+
+![](https://github.com/npct/pct-team/blob/master/figures/front-page-leeds-pct-demo.png?raw=true)
+
+![](images/paste-17.png)
+:::
+::::
+:::::::
+
+------------------------------------------------------------------------
+
+## Learning objectives
+
+- Be able to share reproducible code for more scientific and transparent transport research
+- To be confident reproducing your own work and that of others
+- To become skilled at using Git and GitHub to manage versions of your code and collaborate with others
+- To be able to write reproducible content that can be exported to a variety of formats with the Quarto system for scientific publishing
+- To understand how Quarto extensions can be used as a basis for creating publication-ready papers
+- To be aware of 'continuous integration' and 'GitHub Actions' and how they can be used to ensure reproducibility, share your work, and save time
+- Understanding of best practices around code sharing and collaboration for reproducible research in transport planning
+
+## Prerequisites
+
+This course assumes working knowledge with R or Python for research.
+We assume that you are already comfortable with an integrated development environment (IDE), such as RStudio or VS Code.
+You must have a GitHub account and it will be beneficial to be familiar with the concepts of version control, although we will cover these in the course.
+
+Familiarity with referencing software such as Zotero (recommended) and bibliography file formats such as BibTeX will be beneficial, but not essential.
+
+See the [prerequisites](prerequisites) page for details and to test your setup.
+
+## Questions for students (pre-course)
+
+- What language would you prefer a course on reproducible research to be taught in?
+  - R
+  - Python
+  - Both
+- Which interactive development environment would you prefer to be used as the main editor used and taught during the course?
+  - RStudio
+  - VSCode
+  - Positron (new data science-focussed IDE by Posit)
+
+# Draft agenda and contents
+
+See the [schedule](../schedule.html)
+
+{{< include ../schedule.qmd >}}
+
+## Practicalities
+
+- Course website and open, reproducible code: [tdscience.github.io/course/](https://tdscience.github.io/course/)
+- In person or online?
+- Teaching assistants
+- Number of participants
+- Incorportating feedback
+- Costs

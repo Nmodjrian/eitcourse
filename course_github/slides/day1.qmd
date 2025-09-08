@@ -1,0 +1,330 @@
+---
+title: Tools and Skills for Reproducible Transport Research
+subtitle: Day 1
+format: 
+  # Install plugin with quarto install extension grantmcdermott/quarto-revealjs-clean
+  clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Robin Lovelace
+    orcid: 0000-0001-5679-6536
+    email: r.lovelace@leeds.ac.uk
+    affiliations: University of Leeds
+    role: Course leader
+  - name: Juan Fonseca
+    orcid: TBC
+    affiliations: University of Leeds
+    role: Demonstrator
+date: 2025-09-08
+bibliography: references.bib
+---
+
+# Introduction
+
+## Course overview (see [schedule](../schedule.qmd)) 
+
+### Day 1
+
+-   **09:30-10:00 Introduction**
+-   10:00-11:00 Development environments, system commands, and version control\
+-   11:15-12:30 Sharing code and data\
+-   13:30-15:00 Reproducible papers and documentation with Quarto\
+-   15:15-16:30 Cross-references and citations with Quarto
+
+### Day 2
+
+-   09:30-10:30 Drafting a reproducible paper\
+-   10:45-12:30 Generating reproducible publication-quality visualisations\
+-   13:30-14:30 Editing other people’s work\
+-   14:45-16:00 Working on papers -\> Presentations and wrap-up
+
+## Housekeeping
+
+### WiFi (if eduroam is not working):
+- SSID: Eventos IGOT
+- Password: sAfrcutm 
+
+### Coffe will be downstairs
+
+### Toilets:
+ 
+ - Women's in front of Room 2.1
+ - Men's by the stairs and 
+
+## About us
+
+### Robin Lovelace
+
+-   Professor of Transport Data Science
+-   Focus: influencing decision-making, to make it more evidence-based <!-- -   Large part of research has been in or for government --> <!-- -   In other words: my focus is on impact -->
+-   R package developer and data scientist
+-   New methods for more reproducible, data-driven and participatory transport planning <!-- -   Developer of tools used by hundreds of people leading to ~£1 billion pounds of investment being better spent than it would otherwise have been -->
+
+### Juan Fonseca
+
+-   PhD student at the University of Leeds
+-   Focus: fast and flexible models for estimating traffic
+-   Developer of {Telraamr} and {[azuremapsr](https://github.com/juanfonsecaLS1/azuremapsr)} R packages, the latter of which was recently published on CRAN
+
+## About you
+
+::: incremental
+-   Name
+-   What tools you currently use for research
+-   Where you're from
+-   What's your favourite animal
+-   A random fact about you
+
+### Me
+
+-   Currently using VS Code, Quarto, R, Google Gemini etc, Devcontainers
+-   From Herefordshire, UK
+-   Favourite animal: Red kite
+-   Random fact: I run 5 km every Saturday with double buggy
+:::
+
+### Over to you
+
+## The origins of the course
+
+### "If only I was told this ealier in my career"
+
+Imagine a workflow that enabled:
+
+-   Fewer context switches
+-   More focus on *the content* and not style of the work
+-   Integration of code into your research manuscript
+-   Automatic generation of results, including figures and tables...
+    -   That change seamlessly when input datasets or code changes
+-   Control over how you export and publish your work
+    -   Including publication-quality PDFs, website, blogs, slides
+-   Full reproducibility
+-   You to share your work for maximum benefit to others
+
+## Reproducible research
+
+<!-- TODO: copy slides across from tartu/road safety conferences -->
+
+"Research is considered to be reproducible when the exact results can be reproduced if given access to the original data, software, or code." Source: [displayr.com](https://www.displayr.com/what-is-reproducible-research/)
+
+![](images/paste-3.png)
+
+## Stages of open and reproducible science
+
+::::: columns
+::: {.column width="40%"}
+1.  Open access to the publications
+
+2.  Open access to sample (synthetic if sensitive) data
+
+3.  Open access to the code
+
+4.  Fully reproducible paper published with documentation
+
+5.  Project deployed in tool for non-specialist use
+:::
+
+::: {.column width="60%"}
+![](images/paste-12.png)
+:::
+:::::
+
+## Example: rs5c conference slides
+
+See slides website: [robinlovelace.github.io/rs5c/](https://robinlovelace.github.io/rs5c/) (source code [github.com/robinlovelace/rs5c](https://github.com/Robinlovelace/rs5c/))
+
+![](images/paste-4.png)
+
+## Example of reproducible research: networkmerge
+
+![](images/paste-5.png)
+
+See paper website: https://nptscot.github.io/networkmerge/ Source: [github.com/nptscot](https://github.com/nptscot)
+
+## Example: biclaR
+
+![](images/paste-6.png)
+
+See [biclar.tmobilidad.pt source](https://biclar.tmlmobilidade.pt/index/) code: [github.com/u-shift](#0) [@félix2025].
+
+## Course principles
+
+::: incremental
+-   "Learn by doing"
+-   "Learn by teaching"
+-   "Learn from each other"
+-   "We're all learning"
+-   "Growth mindset"
+-   "Can-do" and "Go for It" attitude
+-   "Every error is a learning opportunity"
+-   "No such thing as a bad question"
+-   "Fail fast"
+-   Balance between focused work and comms
+-   Bring you own principles (BYOP)
+:::
+
+## The practical sessions
+
+-   Time of in-depth work
+-   Use the course website as a reference point but spend most of the time in your own environment
+-   Juan and I will support people 1-2-1 and do 'live demos' now and then
+
+::: callout-tip
+Press Ctrl+Tab to switch from IDE to browser with course content and other things for an efficient workflow
+:::
+
+<!-- TODO: add content here -->
+
+## Any questions before we move to the first practical session?
+
+# Session 1 introduction (see [Session 1 workbook](../s1.qmd))
+
+## Session 1 in context
+
+-   09:30-10:00 Introduction
+-   **10:00-11:00 Development environments, system commands, and version control**\
+-   11:15-12:30 Sharing code and data\
+-   13:30-15:00 Reproducible papers and documentation with Quarto\
+-   15:15-16:30 Cross-references and citations with Quarto
+
+### Day 2
+
+-   09:30-10:30 Drafting a reproducible paper
+
+...
+
+Which IDE?
+
+------------------------------------------------------------------------
+
+```{r}
+#| label: tbl-ide-comparison
+#| 
+ides = readr::read_csv("../data/ides.csv")
+knitr::kable(ides, caption = "Comparison of IDEs for Data Science")
+```
+
+------------------------------------------------------------------------
+
+## Which to use? Open to debate!
+
+::::: columns
+::: column
+Source: [Fosstodon](https://fosstodon.org/@robinlovelace/115164201737081008)
+
+![](images/paste-1.png)
+
+<!-- https://fosstodon.org/@robinlovelace/115164201737081008 -->
+:::
+
+::: column
+Source: [Reddit](https://www.reddit.com/r/RStudio/comments/1msbm1o/positron_vs_rstudio/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+![](images/paste-2.png)
+:::
+:::::
+
+## Which language to use?
+
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:ksubuwag725ajllqmo2ucrtg/app.bsky.feed.post/3lxrrwkqmb72e" data-bluesky-cid="bafyreiag46sexxkngqzlvak7gyvcqjbmgng3itgtnuxcbc7g4ov4stai4q" data-bluesky-embed-color-mode="system">
+
+<p lang>
+
+Saw a post from an influencer telling followers to "stop using R for anything -- use Python like a normal person"
+
+As a 10+ year R & Python user, the irony is that 2025 is the best time EVER to be using R.
+
+Here's why: <br><br><a href="https://bsky.app/profile/did:plc:ksubuwag725ajllqmo2ucrtg/post/3lxrrwkqmb72e?ref_src=embed">\[image or embed\]</a>
+
+</p>
+
+— Kyle Walker (<a href="https://bsky.app/profile/did:plc:ksubuwag725ajllqmo2ucrtg?ref_src=embed">@kylewalker.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:ksubuwag725ajllqmo2ucrtg/post/3lxrrwkqmb72e?ref_src=embed">September 1, 2025 at 3:13 PM</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+```
+
+## Bonus: Live demo of VS Code (time permitting)
+
+![](../images/vscode_layout.png)
+
+## Git and the GitHub CLI
+
+Principle: the command-line is better than the graphical user interface (CLI \> GUI)
+
+-   Using a GUI may allowing you to do something quicker the first time but will slow you down in the long-run
+
+-   CLI: hard first time[^1] but will *save time in long term*
+
+-   The relationship between `git` and `gh` tools
+
+    -   `git` is a long-established version-control system with many commands
+    -   `gh` is a high-level interface to `git` and the GitHub platform
+
+[^1]: Although less so with AI-generated code
+
+## Solo working through the practical (until \~11:00)
+
+Any questions before the coffee break (11:00-11:15)?
+
+Put your hands up, ask another participant, or use the [github.com/tdscience/course/discussions](https://github.com/tdscience/course/discussions)
+
+# Session 2: Sharing code and data (see [Session 2 workbook](../s2.qmd))
+
+## Key GitHub concepts and workflows
+
+### Finding repositories on GitHub
+
+Use the search bar to discover projects and developers:
+
+![](../images/search_bar.png){fig-align="center"}
+
+Or with the `gh` CLI tool 😎
+
+![Search results for transport data science repositories on GitHub using the gh CLI](../images/search-repos-gh-cli.png){#fig-search-repos-gh-cli .lightbox fig-align="center"}
+
+## Repository structure
+
+Every GitHub repo follows a similar layout with tabs for Code, Issues, Pull requests, etc.:
+
+![](../images/repo_layout.png){#fig-repo-layout .lightbox fig-align="center"}
+
+## Creating repositories
+
+You can create repos from scratch or existing folders:
+
+![](../images/menu_new.png)
+
+The repository creation window lets you set name, description, and visibility:
+
+![](../images/window_new.png)
+
+## Cloning and working locally
+
+Clone repos to work on them locally:
+
+![](../images/clone_repo.png)
+
+## Git workflow basics
+
+Version control with commits, branches, and merges:
+
+![Git Workflow diagram](../images/git-branches.png){fig-align="center"}
+
+## Making and committing changes
+
+Stage and commit your work:
+
+![](../images/commit_changes.png)
+
+## Pushing to GitHub
+
+Share your changes with the world:
+
+![](../images/push_commit.png)
+
+## Exercises: Solo working through the practical (until \~12:30)

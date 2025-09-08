@@ -1,0 +1,43 @@
+---
+title: "Tools and Skills for Reproducible Transport Research"
+description-meta: "A comprehensive course on Tools and Skills for Reproducible Transport Research, focusing on reproducible research, version control with Git and GitHub, and scientific publishing with Quarto."
+pagetitle: "Data Science Course for Transport Planning"
+---
+
+## Learning objectives
+
+- Be able to share reproducible code for more scientific and transparent transport research
+- To be confident reproducing your own work and that of others
+- To become skilled at using Git and GitHub to manage versions of your code and collaborate with others
+- To be able to write reproducible content that can be exported to a variety of formats with the Quarto system for scientific publishing
+- To understand how Quarto extensions can be used as a basis for creating publication-ready papers
+- To be aware of 'continuous integration' and 'GitHub Actions' and how they can be used to ensure reproducibility, share your work, and save time
+- Understanding of best practices around code sharing and collaboration for reproducible research in transport planning
+
+## Prerequisites
+
+This course assumes working knowledge with R or Python for research.
+We assume that you are already comfortable with an integrated development environment (IDE), such as RStudio or VS Code.
+You must have a GitHub account and it will be beneficial to be familiar with the concepts of version control, although we will cover these in the course.
+
+Familiarity with referencing software such as Zotero (recommended) and bibliography file formats such as BibTeX will be beneficial, but not essential.
+
+You also need to have some software installed:
+
+- Quarto (minimum version: 1.5.45)
+- R or Python or both
+- An IDE for data science that you have some familiarity with, e.g. RStudio, VS Code or Positron.
+
+See the [prerequisites](prerequisites) page for details and to test your setup.
+
+## Alignment with Overarching Learning Outcomes
+
+The course will contribute to the development of the following skills and competencies:
+
+- Entrepreneurship skills and competencies (OLO 1): The course will prepare researchers for working on real-world projects, up-skill their CVs to contain improved data science competencies, which are in high and growing demand in the job sector, and provide vital website development skills which are key to setting-up and running businesses in the digital age. The course will also provide insight into how academic research and papers can be implemented in practice, with reference to case studies such as the Propensity to Cycle Tool in which academic research was deployed in a national policy context, resulting in a tool that is now used by local authorities across England and Wales.
+
+- Innovation skills and competencies (OLO 2): The course will provide participants test new products and tools, with a focus on new tools for data science, reproducible and scalable research, and a taster of web application development, that could be a game changer in the career path of students who have innovative ideas but currently lack the confidence or skills to implement them. There will be a focus on system innovation and contributing to broader positive societal change, with reference to the potential of open data and open source software to democratize access to data and tools for transport planning.
+
+- Creativity skills and competencies (OLO 3): The course will encourage students to think outside the box, by providing opportunities on day 2 to apply the new tools taught in day 1 to a real-world problem of their choosing. The 'controlled chaos' session will provide a safe space for students to experiment with new tools and ideas, with the support of the course team and other participants.
+
+- Leadership skills and competencies (OLO 6): The course will empower students with new tools and ideas that will enable them to take their research in new directions, for example by converting research methods into a new digital product. The 'can do' attitude advocated in the course will give students the confidence to take on new challenges and lead in their field, within and particularly outside of academia.

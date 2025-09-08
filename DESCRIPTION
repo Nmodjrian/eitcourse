@@ -1,0 +1,26 @@
+Package: tdscience-course
+Title: Tools and Skills for Reproducible Transport Research Course
+Version: 0.1.0
+Authors@R: c(
+    person("Your Name", "your.email@example.com", role = c("aut", "cre"))
+  )
+Description: Course materials and practical workbooks for Tools and Skills for Reproducible Transport Research.
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 4.0.0)
+Imports:
+    sf,
+    tidyverse,
+    tmap,
+    data.table,
+    stats19,
+    quarto,
+    stplanr,
+    osmextract,
+    zonebuilder,
+    reticulate
+Suggests:
+    remotes
