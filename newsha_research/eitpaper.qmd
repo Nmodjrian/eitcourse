@@ -54,7 +54,7 @@ In Finland, sustainable transportation modes like walking, cycling, and public t
 
 
 ## Workflow
-
+Our current project has made of three main steps from inputs to processing and the final output summarised in @fig-workflow. 
 
 <iframe src="https://excalidraw.com/#json=pR27Rm61f8NtTBCFXtJo6,zJgH181aHjGHY7oCTKP0Kg"
         width="800"
@@ -62,6 +62,9 @@ In Finland, sustainable transportation modes like walking, cycling, and public t
         style="border:1px solid #ccc;">
 </iframe>
 
+![](figures/workflow.png){#fig-workflow width=90%}
+
+: Workflow of the data analysis and modelling process.
 
 
 ## Data Selection
