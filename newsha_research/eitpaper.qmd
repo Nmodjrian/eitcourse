@@ -5,8 +5,14 @@ bibliography: references.bib
 csl: apa.csl   # optional: for APA style citations
 nocite: "@*"
 format: 
-  html: default
-  pdf: default
+  html:
+    toc: true          # enable TOC for HTML
+    toc-depth: 3       # include headings up to level 3
+    number-sections: true    # adds numbered headings
+    margin: 1in
+  pdf:
+    toc: true          # enable TOC for PDF
+    toc-depth: 3       # include headings up to level 3
 execute:
   echo: true      # show code
   warning: true   # show warnings
