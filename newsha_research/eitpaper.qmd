@@ -1,7 +1,9 @@
 ---
-title: "EIT Course Paper"
-author: "Newsha"
-format:
+title: "MEASURING SPATIAL ACCESSIBILITY TO SCHOOL THROUGH THE LENS OF EDUCATION EQUITY - CASE OF OULU AND LAHTI CITIES "
+author: "Newsha Modjrian"
+bibliography: references.bib
+csl: apa.csl   # optional: for APA style citations
+format: 
   html: default
   pdf: default
 execute:
@@ -11,10 +13,76 @@ execute:
 jupyter: python3   # use Python kernel for all code
 ---
 
-# Introduction
 
-This is a **bold** text and *italic* text example.  
-We can write equations like $E = mc^2$ in LaTeX.  
+#  *Summary*
+The daily journey to school holds significant importance for youth
+and their families. Accessibility, a multifaceted concept,
+concerns the ease of reaching people or services in a given
+location. School accessibility encompasses physical aspects
+related to transport, land use, and individual factors, as well as
+access to educational services vital for development. This study
+aims to evaluate school accessibility, considering various
+transportation modes and school quality, in two Finnish cities.
+Lahti, awarded as the European Green Capital of 2021, and
+Oulu, renowned as the winter cycling capital of the world, serve
+as case studies. The study comprises five sections: background
+studies, data acquisition, methodology, results, and discussion.
+The conclusion will offer insights and highlight key findings on
+spatial accessibility analysis and steps toward sustainable
+mobility.
+
+
+# Background
+
+In Finland, education is not just a means of acquiring knowledge; it is a cornerstone of societal equity and inclusivity [@kupiainen2009].  
+The daily routine of commuting to school is a core activity for young people and families [@pizzol2021].
+
+
+In Finland, education is not just a means of acquiring knowledge; it is a cornerstone of societal equity and inclusivity. The Finnish education system is globally renowned for its emphasis on equal opportunities and accessibility for all students, irrespective of their socio-economic backgrounds or geographic locations [@kupiainen_finnish_2009]. The daily routine of commuting to school is a core activity of young people’s lives and their families[@easton_childrens_2015]. Accessibility as a multifaceted concept, refers to the ease with which people, goods, or services can be reached in a given place [@martens_fair_2021]. In sense of accessibility to schools, two distinct dimensions emerge. The first pertains to physical accessibility, encompassing traditional aspects such as transport and land use, as well as individual and temporal factors. The second dimension emphasises access to educational services, facilitating intellectual, social, and economic development among students [@pizzol_qualifying_2021]. 
+[@]
+In the realm of spatial analysis, numerous studies have shed light on the spatial distribution of urban services significantly focusing on education and health services [@siqueira-gay_learning_2019]. These studies offer diverse perspectives on accessibility, ranging from assessing spatial equity in accessing the educational system among households with children [@] [@pizzol_qualifying_2021] to examining the impact of educational facilities on property values [@wen_education_2018]. Additionally, research has explored disparities between public and private schools concerning quality and transportation modes[@] [@pizzol_qualifying_2021], delving further into the intersection of transportation and education equity by examining school accessibility via public transport [@moreno-monroy_public_2018]. Furthermore, [@ala-hulkko_accessibility_2019] investigated environmental risks such as tick exposure in residential areas and its potential impact on school children's daily movements within their surroundings.
+
+Spatial accessibility analysis is essential for assessing the fair distribution of urban services. A variety of metrics are used to measure accessibility, from provider-to-population ratios to gravity models, which help identify underserved areas and establish supply standards. However, the travel impedance to the nearest provider, while commonly utilised, is not always suitable for urban settings due to the presence of multiple provider options. Average travel impedance to providers provides a combined measure of accessibility and availability but may overemphasise the influence of peripheral providers. Gravity models, based on Newton's Law of Gravitation, offer a comprehensive understanding of spatial accessibility, applicable to both urban and rural contexts [@guagliardo_spatial_2004; @saxon_rational_2020]. Additionally, network analysis techniques such as Floating Catchment Methods, including the Two-step Floating Catchment Area (2SFCA), the enhanced 2SFCA method (E2SFCA), and 3SFCA, consider population proximity to services and incorporate dynamic patient responses to congested locations. The Rational Agent Model (RAAM) further enhances this approach by incorporating dynamic patient responses into the floating catchment area analysis. These methodologies offer valuable insights into spatial accessibility, contributing to more informed decision-making in urban planning and service provision[@guagliardo_spatial_2004; @pereira_geographic_2021; @saxon_rational_2020] 
+
+In Finland, sustainable transportation modes like walking, cycling, and public transportation are crucial for equitable school access while reducing environmental impact. By prioritising these modes and improving infrastructure, policymakers can ensure fair access to schools for all students, irrespective of socio-economic status or location. Promoting sustainable transportation aligns with broader sustainability goals, such as reducing emissions and fostering healthier communities. This study measures school accessibility using different transport modes and school quality in two Finnish cities: Lahti, the European Green Capital of 2021, and Oulu, known as the global winter cycling capital. In the current study, the accessibility index and travel time will be calculated based on the 2SFCA method utilising the r5py tool. In this regard, the study underscores the importance of sustainable mobility in promoting equitable provision of urban services and creating more environmentally sustainable education systems.
+
+
+# Data Acquisition and workflow
+
+
+## Workflow
+
+
+<iframe src="https://excalidraw.com/#json=pR27Rm61f8NtTBCFXtJo6,zJgH181aHjGHY7oCTKP0Kg"
+        width="800"
+        height="600"
+        style="border:1px solid #ccc;">
+</iframe>
+
+
+
+## Data Selection
+Details about data selection.
+
+## Data Limitation
+Details about limitations.
+
+## Privacy Protection
+Details about privacy.
+
+# Methodology
+Methodology details here.
+
+# Results and Discussion
+Discussion and analysis here.
+
+# Conclusions
+Conclusions go here.
+
+# References
+List of references here.
+
+
 
 ## Subheading: Equations
 
