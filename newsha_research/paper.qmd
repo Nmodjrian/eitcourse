@@ -6,11 +6,6 @@ format: html
 
 # Introduction
 
-This is a reproducible research document for my paper.
+This is a reproducible on my currentl reseach on accessibility to waterbodies in Bari Metropolitan Area.
 
 ## R Example
-```{r}
-x <- 1:10
-mean(x)
-
-
