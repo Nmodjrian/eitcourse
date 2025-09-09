@@ -62,9 +62,7 @@ Our current project has made of three main steps from inputs to processing and t
         style="border:1px solid #ccc;">
 </iframe>
 
-![](figures/workflow.png){#fig-workflow width=90%}
-
-: Workflow of the data analysis and modelling process.
+![Workflow of the data analysis and modelling process](figures/workflow.png){#fig-workflow width=90%}
 
 
 ## Data Selection
