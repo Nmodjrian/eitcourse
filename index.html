@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Newsha Modjrian">
+
+<title>MEASURING SPATIAL ACCESSIBILITY TO SCHOOL THROUGH THE LENS OF EDUCATION EQUITY - CASE OF OULU AND LAHTI CITIES</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="eitpaper_files/libs/clipboard/clipboard.min.js"></script>
+<script src="eitpaper_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="eitpaper_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="eitpaper_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="eitpaper_files/libs/quarto-html/popper.min.js"></script>
+<script src="eitpaper_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="eitpaper_files/libs/quarto-html/anchor.min.js"></script>
+<link href="eitpaper_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="eitpaper_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="eitpaper_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="eitpaper_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="eitpaper_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1</span> <em>Summary</em></a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">2</span> Background</a></li>
+  <li><a href="#data-acquisition-and-workflow" id="toc-data-acquisition-and-workflow" class="nav-link" data-scroll-target="#data-acquisition-and-workflow"><span class="header-section-number">3</span> Data Acquisition and workflow</a>
+  <ul class="collapse">
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow"><span class="header-section-number">3.1</span> Workflow</a></li>
+  <li><a href="#data-selection" id="toc-data-selection" class="nav-link" data-scroll-target="#data-selection"><span class="header-section-number">3.2</span> Data Selection</a></li>
+  <li><a href="#data-limitation" id="toc-data-limitation" class="nav-link" data-scroll-target="#data-limitation"><span class="header-section-number">3.3</span> Data Limitation</a></li>
+  <li><a href="#privacy-protection" id="toc-privacy-protection" class="nav-link" data-scroll-target="#privacy-protection"><span class="header-section-number">3.4</span> Privacy Protection</a></li>
+  </ul></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology"><span class="header-section-number">4</span> Methodology</a></li>
+  <li><a href="#results-and-discussion" id="toc-results-and-discussion" class="nav-link" data-scroll-target="#results-and-discussion"><span class="header-section-number">5</span> Results and Discussion</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">6</span> Conclusions</a>
+  <ul class="collapse">
+  <li><a href="#subheading-equations" id="toc-subheading-equations" class="nav-link" data-scroll-target="#subheading-equations"><span class="header-section-number">6.1</span> Subheading: Equations</a></li>
+  <li><a href="#subheading-simple-python-code" id="toc-subheading-simple-python-code" class="nav-link" data-scroll-target="#subheading-simple-python-code"><span class="header-section-number">6.2</span> Subheading: Simple Python Code</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="../eitpaper.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">MEASURING SPATIAL ACCESSIBILITY TO SCHOOL THROUGH THE LENS OF EDUCATION EQUITY - CASE OF OULU AND LAHTI CITIES</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Newsha Modjrian </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="summary" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> <em>Summary</em></h1>
+<p>The daily journey to school holds significant importance for youth and their families. Accessibility, a multifaceted concept, concerns the ease of reaching people or services in a given location. School accessibility encompasses physical aspects related to transport, land use, and individual factors, as well as access to educational services vital for development. This study aims to evaluate school accessibility, considering various transportation modes and school quality, in two Finnish cities. Lahti, awarded as the European Green Capital of 2021, and Oulu, renowned as the winter cycling capital of the world, serve as case studies. The study comprises five sections: background studies, data acquisition, methodology, results, and discussion. The conclusion will offer insights and highlight key findings on spatial accessibility analysis and steps toward sustainable mobility.</p>
+</section>
+<section id="background" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Background</h1>
+<p>In Finland, education is not just a means of acquiring knowledge; it is a cornerstone of societal equity and inclusivity <span class="citation" data-cites="kupiainen_finnish_2009">(<a href="#ref-kupiainen_finnish_2009" role="doc-biblioref">Kupiainen et al., 2009</a>)</span>. The daily routine of commuting to school is a core activity for young people and families <span class="citation" data-cites="pizzol_qualifying_2021">(<a href="#ref-pizzol_qualifying_2021" role="doc-biblioref">Pizzol et al., 2021</a>)</span>. In Finland, education is not just a means of acquiring knowledge; it is a cornerstone of societal equity and inclusivity. The Finnish education system is globally renowned for its emphasis on equal opportunities and accessibility for all students, irrespective of their socio-economic backgrounds or geographic locations <span class="citation" data-cites="kupiainen_finnish_2009">(<a href="#ref-kupiainen_finnish_2009" role="doc-biblioref">Kupiainen et al., 2009</a>)</span>. The daily routine of commuting to school is a core activity of young people’s lives and their families<span class="citation" data-cites="easton_childrens_2015">(<a href="#ref-easton_childrens_2015" role="doc-biblioref">Easton &amp; Ferrari, 2015</a>)</span>. Accessibility as a multifaceted concept, refers to the ease with which people, goods, or services can be reached in a given place <span class="citation" data-cites="martens_fair_2021">(<a href="#ref-martens_fair_2021" role="doc-biblioref">Martens &amp; Golub, 2021</a>)</span>. In sense of accessibility to schools, two distinct dimensions emerge. The first pertains to physical accessibility, encompassing traditional aspects such as transport and land use, as well as individual and temporal factors. The second dimension emphasises access to educational services, facilitating intellectual, social, and economic development among students <span class="citation" data-cites="pizzol_qualifying_2021">(<a href="#ref-pizzol_qualifying_2021" role="doc-biblioref">Pizzol et al., 2021</a>)</span>. In the realm of spatial analysis, numerous studies have shed light on the spatial distribution of urban services significantly focusing on education and health services <span class="citation" data-cites="siqueira-gay_learning_2019">(<a href="#ref-siqueira-gay_learning_2019" role="doc-biblioref">Siqueira-Gay et al., 2019</a>)</span>. These studies offer diverse perspectives on accessibility, ranging from assessing spatial equity in accessing the educational system among households with children [@] <span class="citation" data-cites="pizzol_qualifying_2021">(<a href="#ref-pizzol_qualifying_2021" role="doc-biblioref">Pizzol et al., 2021</a>)</span> to examining the impact of educational facilities on property values <span class="citation" data-cites="wen_education_2018">(<a href="#ref-wen_education_2018" role="doc-biblioref">Wen et al., 2018</a>)</span>. Additionally, research has explored disparities between public and private schools concerning quality and transportation modes[@] <span class="citation" data-cites="pizzol_qualifying_2021">(<a href="#ref-pizzol_qualifying_2021" role="doc-biblioref">Pizzol et al., 2021</a>)</span>, delving further into the intersection of transportation and education equity by examining school accessibility via public transport <span class="citation" data-cites="moreno-monroy_public_2018">(<a href="#ref-moreno-monroy_public_2018" role="doc-biblioref">Moreno-Monroy et al., 2018</a>)</span>. Furthermore, <span class="citation" data-cites="ala-hulkko_accessibility_2019">(<a href="#ref-ala-hulkko_accessibility_2019" role="doc-biblioref">Ala-Hulkko et al., 2019</a>)</span> investigated environmental risks such as tick exposure in residential areas and its potential impact on school children’s daily movements within their surroundings.</p>
+<p>Spatial accessibility analysis is essential for assessing the fair distribution of urban services. A variety of metrics are used to measure accessibility, from provider-to-population ratios to gravity models, which help identify underserved areas and establish supply standards. However, the travel impedance to the nearest provider, while commonly utilised, is not always suitable for urban settings due to the presence of multiple provider options. Average travel impedance to providers provides a combined measure of accessibility and availability but may overemphasise the influence of peripheral providers. Gravity models, based on Newton’s Law of Gravitation, offer a comprehensive understanding of spatial accessibility, applicable to both urban and rural contexts <span class="citation" data-cites="guagliardo_spatial_2004 saxon_rational_2020">(<a href="#ref-guagliardo_spatial_2004" role="doc-biblioref">Guagliardo, 2004</a>; <a href="#ref-saxon_rational_2020" role="doc-biblioref">Saxon &amp; Snow, 2020</a>)</span>. Additionally, network analysis techniques such as Floating Catchment Methods, including the Two-step Floating Catchment Area (2SFCA), the enhanced 2SFCA method (E2SFCA), and 3SFCA, consider population proximity to services and incorporate dynamic patient responses to congested locations. The Rational Agent Model (RAAM) further enhances this approach by incorporating dynamic patient responses into the floating catchment area analysis. These methodologies offer valuable insights into spatial accessibility, contributing to more informed decision-making in urban planning and service provision<span class="citation" data-cites="guagliardo_spatial_2004 pereira_geographic_2021 saxon_rational_2020">(<a href="#ref-guagliardo_spatial_2004" role="doc-biblioref">Guagliardo, 2004</a>; <a href="#ref-pereira_geographic_2021" role="doc-biblioref">Pereira et al., 2021</a>; <a href="#ref-saxon_rational_2020" role="doc-biblioref">Saxon &amp; Snow, 2020</a>)</span></p>
+<p>In Finland, sustainable transportation modes like walking, cycling, and public transportation are crucial for equitable school access while reducing environmental impact. By prioritising these modes and improving infrastructure, policymakers can ensure fair access to schools for all students, irrespective of socio-economic status or location. Promoting sustainable transportation aligns with broader sustainability goals, such as reducing emissions and fostering healthier communities. This study measures school accessibility using different transport modes and school quality in two Finnish cities: Lahti, the European Green Capital of 2021, and Oulu, known as the global winter cycling capital. In the current study, the accessibility index and travel time will be calculated based on the 2SFCA method utilising the r5py tool. In this regard, the study underscores the importance of sustainable mobility in promoting equitable provision of urban services and creating more environmentally sustainable education systems.</p>
+</section>
+<section id="data-acquisition-and-workflow" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Data Acquisition and workflow</h1>
+<section id="workflow" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="workflow"><span class="header-section-number">3.1</span> Workflow</h2>
+<p>Our current project is made of three main steps from inputs to processing and the final output summarised in <a href="#fig-workflow" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div id="fig-workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/workflow.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Workflow of the data analysis and modelling process
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-selection" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="data-selection"><span class="header-section-number">3.2</span> Data Selection</h2>
+<p>In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland’s records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. <a href="#tbl-data-sources" class="quarto-xref">Table&nbsp;1</a> introduces the key data used in this study.</p>
+<div id="tbl-data-sources" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-data-sources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Key data sources utilised in this study
+</figcaption>
+<div aria-describedby="tbl-data-sources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 44%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data</th>
+<th>Description</th>
+<th>Provider</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Statistical grid (registry data)</td>
+<td>Finland’s statistical grid data includes a range of workplace, sociodemographic, and employment parameters that are published yearly with a geographic precision of 250 meters.</td>
+<td>Statistics Finland, 2018</td>
+</tr>
+<tr class="even">
+<td>General Transit Feed Specification data (GTFS)</td>
+<td>The routes, timetables, and other materials related to public transportation (PT) are utilised to compute the trip times and distances between origins and destinations. Includes details on traffic delays.</td>
+<td>Open data: transitfeeds.com, Transitfeeds (2019)</td>
+</tr>
+<tr class="odd">
+<td>Built environment data</td>
+<td>Information about structures, amenities, sites of interest, transportation infrastructure, etc. utilised in the development of the models for mode choice and travel demand.</td>
+<td>Open data: OSM</td>
+</tr>
+<tr class="even">
+<td>Road network data</td>
+<td>To calculate trip distances for all kinds of transportation (roads), a global open source database of the world’s infrastructure, including buildings and roads, is employed.</td>
+<td>Open data: Protomaps</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="data-limitation" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="data-limitation"><span class="header-section-number">3.3</span> Data Limitation</h2>
+<p>A notable limitation of the dataset pertains to the temporal aspect, as the population data is sourced from 2018. This temporal constraint introduces the possibility of inaccuracies or discrepancies, particularly regarding demographic shifts and changes in population structure that may have occurred since the data collection. When utilising open-source data like OpenStreetMap (OSM) datasets for analysis, several limitations should be considered. Firstly, while OSM data is extensive and constantly evolving due to contributions from volunteers worldwide, it may still lack completeness or accuracy in certain regions or specific data types. This incompleteness can lead to gaps or inaccuracies in analyses, especially in less developed or remote areas where mapping efforts may be limited. Additionally, the quality of OSM data can vary depending on the contributors’ expertise and the verification processes in place <span class="citation" data-cites="helbich_comparative_2012">(<a href="#ref-helbich_comparative_2012" role="doc-biblioref">Helbich et al., 2012</a>)</span>.</p>
+</section>
+<section id="privacy-protection" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="privacy-protection"><span class="header-section-number">3.4</span> Privacy Protection</h2>
+<p>The data privacy of population datasets fetched from Statistics Finland is rigorously upheld through an agreement between Aalto University and Statistics Finland, ensuring adherence to strict terms of use. Governed by this agreement, the Ruututietokanta data is licensed exclusively for utilization within the department of built environment, facilitating teaching endeavours and jointly funded research initiatives. However, it is explicitly prohibited for deployment in contract research or any commercial activities. These stipulations are in place to safeguard the privacy and confidentiality of individuals represented within the datasets, guaranteeing that sensitive information remains protected and utilised solely for authorised academic and research purposes within the specified parameters.</p>
+<p>The data privacy of the road network dataset from OpenStreetMap (OSM) in Protocolbuffer Binary (.pbf) format, downloaded from the open-source platform of Protomaps, is governed by the terms of the Open Database License (ODbL). While OSM data is generally available under open licenses, users must adhere to specific obligations, including attribution requirements and limitations on commercial use in certain instances. Additionally, the GTFS transport schedule dataset sourced from open-source data of Transitfeeds is subject to similar privacy considerations and usage restrictions.</p>
+</section>
+</section>
+<section id="methodology" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Methodology</h1>
+<p>The methodology employed in this study focuses on assessing spatial accessibility through network analysis to calculate travel time between origins and destinations using the r5py tool. The aim is to compare spatial accessibility to schools across two Finnish cities (Lahti and Oulu), considering various modes of transportation such as public transportation, cycling, walking, and car travel.</p>
+<p>A travel time matrix provides comprehensive data on the travel time between all pairs of locations within an urban area. These locations represent various origins and destinations, ranging from everyday services and residential homes to a comprehensive set of locations covering the entire area. This matrix serves as a fundamental tool in transportation research and planning, enabling the assessment of how easily individuals can access different destinations. It facilitates the evaluation of the impacts of transport and land use policies, the analysis of accessibility patterns, and the examination of factors influencing accessibility, such as public transport quality, street networks, and land use patterns <span class="citation" data-cites="fink_c_klumpenhouwer_w_saraiva_m_pereira_r__tenkanen_h_r5py_2022">(<a href="#ref-fink_c_klumpenhouwer_w_saraiva_m_pereira_r__tenkanen_h_r5py_2022" role="doc-biblioref">Fink, 2022</a>)</span>. Overall, the results provide critical information essential for fostering equitable, sustainable urban environments and enhancing the quality of life for residents. In this context, the framework adopted follows these steps:</p>
+<p>1- Origins and Destinations: To calculate travel times from the centre points of population grid cells to schools, we determined the locations of these places using data from the population grid and OpenStreetMap (OSM) (school tag). Since two different datasets were utilised, they were unified to the EPSG:4326 reference system. 2- Transport Network: r5py relies on a transport network for its operations. This includes a street network, which incorporates infrastructure for cycling and walking. The network is loaded from an extract of OpenStreetMap data in Protocol Buffer (.pbf) format, which is mandatory for r5py operations ans. In terms of public transportation, transport schedule extracted from GTFS file. 3- Compute a Travel Time Matrix: A travel time matrix represents the travel costs (typically time) between specified locations (origins and destinations) within the study area. 4- Closest facilities: Subsequently, the travel time data is aggregated with the population grid to retain only information pertaining to travel times to the nearest schools. 5- Analyse Accessibility: The final step involves analysing accessibility by calculating the number of inhabitants able to reach the services within a given travel time threshold of 20 minutes.</p>
+<p>The analysis was conducted using Python in JupyterLab, while visualization was carried out using the ArcGIS Pro application.</p>
+</section>
+<section id="results-and-discussion" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Results and Discussion</h1>
+<p>The travel time matrix was computed to determine the time it takes for households with children to reach the nearest school. Figure 1 visualises the travel time to the closest school for both Lahti and Oulu. While driving a car proves to be the most convenient option, it falls short in terms of sustainability for the daily commute of students between their homes and schools. Another commonly used approach to analyse accessibility is to analyse how many services can a given individual (or group of individuals) access within given travel time budget. This is called cumulative opportunities measure into 4 different travel time intervals: under 10 minutes, 10-20 minutes, 20-30 minutes, and above 30 minutes. Each category represents the percentage of the population who fall within that specific travel time range for each mode of transportation.</p>
+<p>In case of Lahti, the “under 10 minutes” category, 26.36% of the population can reach their school within 10 minutes by walking, while 85.89% and 26.44% can do so by cycling and public transport, respectively.</p>
+<p>Fingure 2: Time Travel by different modes of transportation in Lahti and Oulu</p>
+<p>As we move to longer travel time intervals, the percentage of the population decreases, indicating that fewer people can reach their school within those time frames. For instance, in the “above 30 minutes” category, only 17.18%, 0.20%, and 7.54% of the population can reach their school within that time frame by walking, cycling, and public transport, respectively.</p>
+<p>Figure 3</p>
+<p>The analysis of “Travel Time to School in Oulu” illustrated in Graph 2 follows a similar structure to that of Lahti, focusing on the distribution of travel times for walking, cycling, and public transport. In the “under 10 minutes” category, we observe that 29.48% of the population in Oulu can reach their school within 10 minutes by walking, while a significantly higher percentage of 91.60% and 29.48% can do so by cycling and public transport, respectively. This suggests that cycling and public transport are more efficient modes of transportation for short-distance travel in Oulu compared to walking.</p>
+<p>As we move to longer travel time intervals, the percentage of the population decreases, indicating that fewer people can reach their school within those time frames. For instance, in the “above 30 minutes” category, only 10.53%, 0.03%, and 4.27% of the population can reach their school within that time frame by walking, cycling, and public transport, respectively. Overall, the analysis provides insights into the accessibility of schools in Oulu and Lahti by different modes of transportation, highlighting the variations in travel times experienced by the population and emphasising the importance of efficient transportation networks for ensuring equitable access to education.</p>
+<p>Figure 4</p>
+<p>The analysis of “Travel Time to School in Oulu” illustrated in Graph 2 follows a similar structure to that of Lahti, focusing on the distribution of travel times for walking, cycling, and public transport. In the “under 10 minutes” category, we observe that 29.48% of the population in Oulu can reach their school within 10 minutes by walking, while a significantly higher percentage of 91.60% and 29.48% can do so by cycling and public transport, respectively. This suggests that cycling and public transport are more efficient modes of transportation for short-distance travel in Oulu compared to walking.</p>
+<p>As we move to longer travel time intervals, the percentage of the population decreases, indicating that fewer people can reach their school within those time frames. For instance, in the “above 30 minutes” category, only 10.53%, 0.03%, and 4.27% of the population can reach their school within that time frame by walking, cycling, and public transport, respectively. Overall, the analysis provides insights into the accessibility of schools in Oulu and Lahti by different modes of transportation, highlighting the variations in travel times experienced by the population and emphasising the importance of efficient transportation networks for ensuring equitable access to education.</p>
+<p>Figure 5</p>
+<p>In comparing the travel time to school between Oulu and Lahti, several notable differences emerge, reflecting variations in urban infrastructure, transportation networks, and geographical features between the two cities. Firstly, in terms of walking as a mode of transportation, both cities exhibit similar patterns in the distribution of travel times. However, Oulu appears to have a slightly higher percentage of the population reaching their schools within shorter time intervals, particularly in the “under 10 minutes” category. This may be attributed to Oulu’s urban layout, which could be more conducive to walking, with shorter distances between residential areas and schools compared to Lahti.</p>
+<p>Secondly, cycling emerges as a particularly efficient mode of transportation in both cities, with a significant portion of the population able to reach their schools within short travel times. However, Oulu demonstrates a notably higher percentage of individuals reaching their schools within 20 minutes by cycling (99.8%) compared to Lahti. This could be attributed to Oulu’s reputation as the winter cycling capital of the world and cycling capital of Finland, indicating a more developed cycling infrastructure and culture that facilitates faster and more efficient travel to schools.</p>
+<p>Lastly, public transport accessibility to schools appears to be more prominent in Oulu compared to Lahti. While both cities show similar trends in the distribution of travel times by public transport, Oulu exhibits a higher percentage of the population reaching their schools within shorter time intervals (up to 20-minute). This may be indicative of a more comprehensive public transport network and better connectivity to schools in Oulu.</p>
+</section>
+<section id="conclusions" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Conclusions</h1>
+<p>The accessibility analysis conducted in this study provides valuable insights into the spatial accessibility of schools for households with children and teenagers who commute daily for education. The comparison between Oulu and Lahti underscores the significance of considering local contextual factors, urban planning initiatives, and transportation policies when assessing spatial accessibility to educational facilities. While both cities demonstrate relatively efficient access to schools, disparities in travel times emphasise the need for tailored strategies to address specific challenges and capitalise on existing strengths to enhance educational equity and sustainability in each urban context.</p>
+<p>The analysis of accessibility within Oulu, known as the winter cycling capital of the world, highlights a well-developed cycling infrastructure and culture that facilitates faster and more efficient travel to schools. On the other hand, Lahti, considered a green capital city, demonstrates lower accessibility measures compared to Oulu in all modes of transportation, highlighting the significance of room for diverse transportation options in improving spatial accessibility for students.</p>
+<p>However, it is essential to recognise that accessibility analysis through passive sensing methods should be complemented by active sensing approaches. For instance, conducting mobility analyses can provide valuable insights into the actual experiences and perspectives of users. While active sensing methods may be time-consuming and resource-intensive, they offer a more nuanced understanding of service provision and user needs. Therefore, while passive methods provide valuable insights into spatial accessibility, they should be complemented with active participatory approaches to gain a more comprehensive understanding of user needs and preferences. By combining passive and active methods, researchers and policymakers can develop more effective strategies to enhance spatial accessibility and promote equitable access to education and other essential services.</p>
+<section id="subheading-equations" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="subheading-equations"><span class="header-section-number">6.1</span> Subheading: Equations</h2>
+<p>Displayed equation:<br>
+<span class="math display">\[
+\int_0^1 x^2 dx = \frac{1}{3}
+\]</span></p>
+</section>
+<section id="subheading-simple-python-code" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="subheading-simple-python-code"><span class="header-section-number">6.2</span> Subheading: Simple Python Code</h2>
+<p>x = list(range(1, 11)) mean_x = sum(x) / len(x) mean_x</p>
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-ala-hulkko_accessibility_2019" class="csl-entry" role="listitem">
+Ala-Hulkko, T., Kotavaara, O., Alahuhta, J., Kesälä, M., &amp; Hjort, J. (2019). Accessibility analysis in evaluating exposure risk to an ecosystem disservice. <em>Applied Geography</em>, <em>113</em>, 102098. <a href="https://doi.org/10.1016/j.apgeog.2019.102098">https://doi.org/10.1016/j.apgeog.2019.102098</a>
+</div>
+<div id="ref-boisjoly_insider_2017" class="csl-entry" role="listitem">
+Boisjoly, G., &amp; El-Geneidy, A. M. (2017). The insider: <span>A</span> planners’ perspective on accessibility. <em>Journal of Transport Geography</em>, <em>64</em>, 33–43. <a href="https://doi.org/10.1016/j.jtrangeo.2017.08.006">https://doi.org/10.1016/j.jtrangeo.2017.08.006</a>
+</div>
+<div id="ref-chin_influence_2006" class="csl-entry" role="listitem">
+Chin, H. C., &amp; Foong, K. W. (2006). Influence of <span>School</span> <span>Accessibility</span> on <span>Housing</span> <span>Values</span>. <em>Journal of Urban Planning and Development</em>, <em>132</em>(3), 120–129. <a href="https://doi.org/10.1061/(ASCE)0733-9488(2006)132:3(120)">https://doi.org/10.1061/(ASCE)0733-9488(2006)132:3(120)</a>
+</div>
+<div id="ref-cui_accessibility_2019" class="csl-entry" role="listitem">
+Cui, B., Boisjoly, G., El-Geneidy, A., &amp; Levinson, D. (2019). Accessibility and the journey to work through the lens of equity. <em>Journal of Transport Geography</em>, <em>74</em>, 269–277. <a href="https://doi.org/10.1016/j.jtrangeo.2018.12.003">https://doi.org/10.1016/j.jtrangeo.2018.12.003</a>
+</div>
+<div id="ref-easton_childrens_2015" class="csl-entry" role="listitem">
+Easton, S., &amp; Ferrari, E. (2015). Children’s travel to school—the interaction of individual, neighbourhood and school factors. <em>Transport Policy</em>, <em>44</em>, 9–18. <a href="https://doi.org/10.1016/j.tranpol.2015.05.023">https://doi.org/10.1016/j.tranpol.2015.05.023</a>
+</div>
+<div id="ref-fink_c_klumpenhouwer_w_saraiva_m_pereira_r__tenkanen_h_r5py_2022" class="csl-entry" role="listitem">
+Fink, K., C. (2022). <em>R5py: <span>Rapid</span> <span>Realistic</span> <span>Routing</span> with <span>R5</span> in <span>Python</span>.</em> <a href="https://r5py.readthedocs.io/en/stable/index.html">https://r5py.readthedocs.io/en/stable/index.html</a>
+</div>
+<div id="ref-freiria_spatial_2022" class="csl-entry" role="listitem">
+Freiria, S., Sousa, N., &amp; Calvo-Poyo, F. (2022). Spatial analysis of the impact of transport accessibility on regional performance: <span>A</span> study for <span>Europe</span>. <em>Journal of Transport Geography</em>, <em>102</em>, 103371. <a href="https://doi.org/10.1016/j.jtrangeo.2022.103371">https://doi.org/10.1016/j.jtrangeo.2022.103371</a>
+</div>
+<div id="ref-guagliardo_spatial_2004" class="csl-entry" role="listitem">
+Guagliardo, M. F. (2004). Spatial accessibility of primary care: Concepts, methods and challenges. <em>International Journal of Health Geographics</em>.
+</div>
+<div id="ref-helbich_comparative_2012" class="csl-entry" role="listitem">
+Helbich, M., Amelunxen, C., Neis, P., &amp; Zipf, A. (2012). Comparative <span>Spatial</span> <span>Analysis</span> of <span>Positional</span> <span>Accuracy</span> of <span>OpenStreetMap</span> and <span>Proprietary</span> <span>Geodata</span>. <em>In: T. Jekel, Et Al., Eds. Proceedings of GI_Forum 2012, 3–6 July Berlin. Berlin: Wichmann &amp; ÖAW-Verlag, 24–33.</em>
+</div>
+<div id="ref-kelobonye_measuring_2020" class="csl-entry" role="listitem">
+Kelobonye, K., Zhou, H., McCarney, G., &amp; Xia, J. (Cecilia). (2020). Measuring the accessibility and spatial equity of urban services under competition using the cumulative opportunities measure. <em>Journal of Transport Geography</em>, <em>85</em>, 102706. <a href="https://doi.org/10.1016/j.jtrangeo.2020.102706">https://doi.org/10.1016/j.jtrangeo.2020.102706</a>
+</div>
+<div id="ref-kroesen_understanding_2022" class="csl-entry" role="listitem">
+Kroesen, M., &amp; Van Wee, B. (2022). Understanding how accessibility influences health via active travel: <span>Results</span> from a structural equation model. <em>Journal of Transport Geography</em>, <em>102</em>, 103379. <a href="https://doi.org/10.1016/j.jtrangeo.2022.103379">https://doi.org/10.1016/j.jtrangeo.2022.103379</a>
+</div>
+<div id="ref-kupiainen_finnish_2009" class="csl-entry" role="listitem">
+Kupiainen, S., Hautamäki, J., &amp; Karjalainen, T. (2009). <em><span>THE</span> <span>FINNISH</span> <span>EDUCATION</span> <span>SYSTEM</span> <span>AND</span> <span>PISA</span></em>. Helsinki University Print Bookstore. <a href="https://julkaisut.valtioneuvosto.fi/bitstream/handle/10024/75640/opm46.pdf?sequence=1&amp;isAllowe">https://julkaisut.valtioneuvosto.fi/bitstream/handle/10024/75640/opm46.pdf?sequence=1&amp;isAllowe</a>
+</div>
+<div id="ref-martens_fair_2021" class="csl-entry" role="listitem">
+Martens, K., &amp; Golub, A. (2021). A <span>Fair</span> <span>Distribution</span> of <span>Accessibility</span>: <span>Interpreting</span> <span>Civil</span> <span>Rights</span> <span>Regulations</span> for <span>Regional</span> <span>Transportation</span> <span>Plans</span>. <em>Journal of Planning Education and Research</em>, <em>41</em>(4), 425–444. <a href="https://doi.org/10.1177/0739456X18791014">https://doi.org/10.1177/0739456X18791014</a>
+</div>
+<div id="ref-moreno-monroy_public_2018" class="csl-entry" role="listitem">
+Moreno-Monroy, A. I., Lovelace, R., &amp; Ramos, F. R. (2018). Public transport and school location impacts on educational inequalities: <span>Insights</span> from <span>São</span> <span>Paulo</span>. <em>Journal of Transport Geography</em>, <em>67</em>, 110–118. <a href="https://doi.org/10.1016/j.jtrangeo.2017.08.012">https://doi.org/10.1016/j.jtrangeo.2017.08.012</a>
+</div>
+<div id="ref-pereira_geographic_2021" class="csl-entry" role="listitem">
+Pereira, R. H. M., Braga, C. K. V., Servo, L. M., Serra, B., Amaral, P., Gouveia, N., &amp; Paez, A. (2021). Geographic access to <span>COVID</span>-19 healthcare in <span>Brazil</span> using a balanced float catchment area approach. <em>Social Science &amp; Medicine</em>, <em>273</em>, 113773. <a href="https://doi.org/10.1016/j.socscimed.2021.113773">https://doi.org/10.1016/j.socscimed.2021.113773</a>
+</div>
+<div id="ref-pizzol_qualifying_2021" class="csl-entry" role="listitem">
+Pizzol, B., Giannotti, M., &amp; Tomasiello, D. B. (2021). Qualifying accessibility to education to investigate spatial equity. <em>Journal of Transport Geography</em>, <em>96</em>, 103199. <a href="https://doi.org/10.1016/j.jtrangeo.2021.103199">https://doi.org/10.1016/j.jtrangeo.2021.103199</a>
+</div>
+<div id="ref-pot_perceived_2021" class="csl-entry" role="listitem">
+Pot, F. J., Van Wee, B., &amp; Tillema, T. (2021). Perceived accessibility: <span>What</span> it is and why it differs from calculated accessibility measures based on spatial data. <em>Journal of Transport Geography</em>, <em>94</em>, 103090. <a href="https://doi.org/10.1016/j.jtrangeo.2021.103090">https://doi.org/10.1016/j.jtrangeo.2021.103090</a>
+</div>
+<div id="ref-salih_measuring_2022" class="csl-entry" role="listitem">
+Salih, S. H., &amp; Lee, J. (Brian). (2022). Measuring transit accessibility: <span>A</span> dispersion factor to recognise the spatial distribution of accessible opportunities. <em>Journal of Transport Geography</em>, <em>98</em>, 103238. <a href="https://doi.org/10.1016/j.jtrangeo.2021.103238">https://doi.org/10.1016/j.jtrangeo.2021.103238</a>
+</div>
+<div id="ref-saxon_rational_2020" class="csl-entry" role="listitem">
+Saxon, J., &amp; Snow, D. (2020). A <span>Rational</span> <span>Agent</span> <span>Model</span> for the <span>Spatial</span> <span>Accessibility</span> of <span>Primary</span> <span>Health</span> <span>Care</span>. <em>Annals of the American Association of Geographers</em>, <em>110</em>(1), 205–222. <a href="https://doi.org/10.1080/24694452.2019.1629870">https://doi.org/10.1080/24694452.2019.1629870</a>
+</div>
+<div id="ref-silva_is_2022" class="csl-entry" role="listitem">
+Silva, C., &amp; Altieri, M. (2022). Is regional accessibility undermining local accessibility? <em>Journal of Transport Geography</em>, <em>101</em>, 103336. <a href="https://doi.org/10.1016/j.jtrangeo.2022.103336">https://doi.org/10.1016/j.jtrangeo.2022.103336</a>
+</div>
+<div id="ref-siqueira-gay_learning_2019" class="csl-entry" role="listitem">
+Siqueira-Gay, J., Giannotti, M., &amp; Sester, M. (2019). Learning about spatial inequalities: <span>Capturing</span> the heterogeneity in the urban environment. <em>Journal of Cleaner Production</em>, <em>237</em>, 117732. <a href="https://doi.org/10.1016/j.jclepro.2019.117732">https://doi.org/10.1016/j.jclepro.2019.117732</a>
+</div>
+<div id="ref-van_wee_accessibility_2021" class="csl-entry" role="listitem">
+Van Wee, B. (2021). Accessibility and mobility: <span>Positional</span> goods? <span>A</span> discussion paper. <em>Journal of Transport Geography</em>, <em>92</em>, 103033. <a href="https://doi.org/10.1016/j.jtrangeo.2021.103033">https://doi.org/10.1016/j.jtrangeo.2021.103033</a>
+</div>
+<div id="ref-wen_education_2018" class="csl-entry" role="listitem">
+Wen, H., Xiao, Y., Hui, E. C. M., &amp; Zhang, L. (2018). Education quality, accessibility, and housing price: <span>Does</span> spatial heterogeneity exist in education capitalization? <em>Habitat International</em>, <em>78</em>, 68–82. <a href="https://doi.org/10.1016/j.habitatint.2018.05.012">https://doi.org/10.1016/j.habitatint.2018.05.012</a>
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
