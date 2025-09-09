@@ -3,6 +3,7 @@ title: "MEASURING SPATIAL ACCESSIBILITY TO SCHOOL THROUGH THE LENS OF EDUCATION 
 author: "Newsha Modjrian"
 bibliography: references.bib
 csl: apa.csl   # optional: for APA style citations
+nocite: "@*"
 format: 
   html: default
   pdf: default
@@ -62,25 +63,74 @@ In Finland, sustainable transportation modes like walking, cycling, and public t
 
 
 ## Data Selection
-Details about data selection.
+In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland's records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. Table 1 introduces the key data used in this study. 
 
 ## Data Limitation
-Details about limitations.
+A notable limitation of the dataset pertains to the temporal aspect, as the population data is sourced from 2018. This temporal constraint introduces the possibility of inaccuracies or discrepancies, particularly regarding demographic shifts and changes in population structure that may have occurred since the data collection.
+When utilising open-source data like OpenStreetMap (OSM) datasets for analysis, several limitations should be considered. Firstly, while OSM data is extensive and constantly evolving due to contributions from volunteers worldwide, it may still lack completeness or accuracy in certain regions or specific data types. This incompleteness can lead to gaps or inaccuracies in analyses, especially in less developed or remote areas where mapping efforts may be limited. Additionally, the quality of OSM data can vary depending on the contributors' expertise and the verification processes in place [@helbich_comparative_2012).
+
 
 ## Privacy Protection
-Details about privacy.
+The data privacy of population datasets fetched from Statistics Finland is rigorously upheld through an agreement between Aalto University and Statistics Finland, ensuring adherence to strict terms of use. Governed by this agreement, the Ruututietokanta data is licensed exclusively for utilization within the department of built environment, facilitating teaching endeavours and jointly funded research initiatives. However, it is explicitly prohibited for deployment in contract research or any commercial activities. These stipulations are in place to safeguard the privacy and confidentiality of individuals represented within the datasets, guaranteeing that sensitive information remains protected and utilised solely for authorised academic and research purposes within the specified parameters.
+
+The data privacy of the road network dataset from OpenStreetMap (OSM) in Protocolbuffer Binary (.pbf) format, downloaded from the open-source platform of Protomaps, is governed by the terms of the Open Database License (ODbL). While OSM data is generally available under open licenses, users must adhere to specific obligations, including attribution requirements and limitations on commercial use in certain instances. Additionally, the GTFS transport schedule dataset sourced from open-source data of Transitfeeds is subject to similar privacy considerations and usage restrictions.
+
 
 # Methodology
-Methodology details here.
+The methodology employed in this study focuses on assessing spatial accessibility through network analysis to calculate travel time between origins and destinations using the r5py tool. The aim is to compare spatial accessibility to schools across two Finnish cities (Lahti and Oulu), considering various modes of transportation such as public transportation, cycling, walking, and car travel. 
+
+A travel time matrix provides comprehensive data on the travel time between all pairs of locations within an urban area. These locations represent various origins and destinations, ranging from everyday services and residential homes to a comprehensive set of locations covering the entire area. This matrix serves as a fundamental tool in transportation research and planning, enabling the assessment of how easily individuals can access different destinations. It facilitates the evaluation of the impacts of transport and land use policies, the analysis of accessibility patterns, and the examination of factors influencing accessibility, such as public transport quality, street networks, and land use patterns (Fink et al., 2022). Overall, the results provide critical information essential for fostering equitable, sustainable urban environments and enhancing the quality of life for residents. In this context, the framework adopted follows these steps:
+
+1- Origins and Destinations: To calculate travel times from the centre points of population grid cells to schools, we determined the locations of these places using data from the population grid and OpenStreetMap (OSM) (school tag). Since two different datasets were utilised, they were unified to the EPSG:4326 reference system.
+2- Transport Network: r5py relies on a transport network for its operations. This includes a street network, which incorporates infrastructure for cycling and walking. The network is loaded from an extract of OpenStreetMap data in Protocol Buffer (.pbf) format, which is mandatory for r5py operations ans. In terms of public transportation, transport schedule extracted from  GTFS file.
+3- Compute a Travel Time Matrix:  A travel time matrix represents the travel costs (typically time) between specified locations (origins and destinations) within the study area. 
+4- Closest facilities: Subsequently, the travel time data is aggregated with the population grid to retain only information pertaining to travel times to the nearest schools.
+5- Analyse Accessibility: The final step involves analysing accessibility by calculating the number of inhabitants able to reach the services within a given travel time threshold of 20 minutes.
+
+The analysis was conducted using Python in JupyterLab, while visualization was carried out using the ArcGIS Pro application. 
+
 
 # Results and Discussion
-Discussion and analysis here.
+The travel time matrix was computed to determine the time it takes for households with children to reach the nearest school. Figure 1 visualises the travel time to the closest school for both Lahti and Oulu. While driving a car proves to be the most convenient option, it falls short in terms of sustainability for the daily commute of students between their homes and schools.
+Another commonly used approach to analyse accessibility is to analyse how many services can a given individual (or group of individuals) access within given travel time budget. This is called cumulative opportunities measure into 4 different travel time intervals: under 10 minutes, 10-20 minutes, 20-30 minutes, and above 30 minutes. Each category represents the percentage of the population who fall within that specific travel time range for each mode of transportation. 
+
+In case of Lahti, the "under 10 minutes" category, 26.36% of the population can reach their school within 10 minutes by walking, while 85.89% and 26.44% can do so by cycling and public transport, respectively.
+
+Fingure 2: Time Travel by different modes of transportation in Lahti and Oulu
+
+As we move to longer travel time intervals, the percentage of the population decreases, indicating that fewer people can reach their school within those time frames. For instance, in the "above 30 minutes" category, only 17.18%, 0.20%, and 7.54% of the population can reach their school within that time frame by walking, cycling, and public transport, respectively.
+
+Figure 3
+
+The analysis of "Travel Time to School in Oulu" illustrated in Graph 2 follows a similar structure to that of Lahti, focusing on the distribution of travel times for walking, cycling, and public transport. In the "under 10 minutes" category, we observe that 29.48% of the population in Oulu can reach their school within 10 minutes by walking, while a significantly higher percentage of 91.60% and 29.48% can do so by cycling and public transport, respectively. This suggests that cycling and public transport are more efficient modes of transportation for short-distance travel in Oulu compared to walking.
+
+As we move to longer travel time intervals, the percentage of the population decreases, indicating that fewer people can reach their school within those time frames. For instance, in the "above 30 minutes" category, only 10.53%, 0.03%, and 4.27% of the population can reach their school within that time frame by walking, cycling, and public transport, respectively.
+Overall, the analysis provides insights into the accessibility of schools in Oulu and Lahti by different modes of transportation, highlighting the variations in travel times experienced by the population and emphasising the importance of efficient transportation networks for ensuring equitable access to education.
+
+Figure 4
+
+The analysis of "Travel Time to School in Oulu" illustrated in Graph 2 follows a similar structure to that of Lahti, focusing on the distribution of travel times for walking, cycling, and public transport. In the "under 10 minutes" category, we observe that 29.48% of the population in Oulu can reach their school within 10 minutes by walking, while a significantly higher percentage of 91.60% and 29.48% can do so by cycling and public transport, respectively. This suggests that cycling and public transport are more efficient modes of transportation for short-distance travel in Oulu compared to walking.
+
+As we move to longer travel time intervals, the percentage of the population decreases, indicating that fewer people can reach their school within those time frames. For instance, in the "above 30 minutes" category, only 10.53%, 0.03%, and 4.27% of the population can reach their school within that time frame by walking, cycling, and public transport, respectively.
+Overall, the analysis provides insights into the accessibility of schools in Oulu and Lahti by different modes of transportation, highlighting the variations in travel times experienced by the population and emphasising the importance of efficient transportation networks for ensuring equitable access to education.
+
+Figure 5
+
+In comparing the travel time to school between Oulu and Lahti, several notable differences emerge, reflecting variations in urban infrastructure, transportation networks, and geographical features between the two cities.
+Firstly, in terms of walking as a mode of transportation, both cities exhibit similar patterns in the distribution of travel times. However, Oulu appears to have a slightly higher percentage of the population reaching their schools within shorter time intervals, particularly in the "under 10 minutes" category. This may be attributed to Oulu's urban layout, which could be more conducive to walking, with shorter distances between residential areas and schools compared to Lahti.
+
+Secondly, cycling emerges as a particularly efficient mode of transportation in both cities, with a significant portion of the population able to reach their schools within short travel times. However, Oulu demonstrates a notably higher percentage of individuals reaching their schools within 20 minutes by cycling (99.8%) compared to Lahti. This could be attributed to Oulu's reputation as the winter cycling capital of the world and cycling capital of Finland, indicating a more developed cycling infrastructure and culture that facilitates faster and more efficient travel to schools.
+
+Lastly, public transport accessibility to schools appears to be more prominent in Oulu compared to Lahti. While both cities show similar trends in the distribution of travel times by public transport, Oulu exhibits a higher percentage of the population reaching their schools within shorter time intervals (up to 20-minute). This may be indicative of a more comprehensive public transport network and better connectivity to schools in Oulu.
+
 
 # Conclusions
-Conclusions go here.
+The accessibility analysis conducted in this study provides valuable insights into the spatial accessibility of schools for households with children and teenagers who commute daily for education. The comparison between Oulu and Lahti underscores the significance of considering local contextual factors, urban planning initiatives, and transportation policies when assessing spatial accessibility to educational facilities. While both cities demonstrate relatively efficient access to schools, disparities in travel times emphasise the need for tailored strategies to address specific challenges and capitalise on existing strengths to enhance educational equity and sustainability in each urban context.
 
-# References
-List of references here.
+The analysis of accessibility within Oulu, known as the winter cycling capital of the world, highlights a well-developed cycling infrastructure and culture that facilitates faster and more efficient travel to schools. On the other hand, Lahti, considered a green capital city, demonstrates lower accessibility measures compared to Oulu in all modes of transportation, highlighting the significance of room for diverse transportation options in improving spatial accessibility for students.
+
+However, it is essential to recognise that accessibility analysis through passive sensing methods should be complemented by active sensing approaches. For instance, conducting mobility analyses can provide valuable insights into the actual experiences and perspectives of users. While active sensing methods may be time-consuming and resource-intensive, they offer a more nuanced understanding of service provision and user needs. Therefore, while passive methods provide valuable insights into spatial accessibility, they should be complemented with active participatory approaches to gain a more comprehensive understanding of user needs and preferences. By combining passive and active methods, researchers and policymakers can develop more effective strategies to enhance spatial accessibility and promote equitable access to education and other essential services. 
+
 
 
 
