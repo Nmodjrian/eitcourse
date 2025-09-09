@@ -52,23 +52,17 @@ In Finland, sustainable transportation modes like walking, cycling, and public t
 
 # Data Acquisition and workflow
 
-
 ## Workflow
-Our current project has made of three main steps from inputs to processing and the final output summarised in @fig-workflow. 
 
-<iframe src="https://excalidraw.com/#json=pR27Rm61f8NtTBCFXtJo6,zJgH181aHjGHY7oCTKP0Kg"
-        width="800"
-        height="600"
-        style="border:1px solid #ccc;">
-</iframe>
+Our current project is made of three main steps from inputs to processing and the final output summarised in @fig-workflow.
 
-![](figures/workflow.png){#fig-workflow width=90%}
+![](figures/workflow.png){#fig-workflow width=100%}
 
-: Workflow of the data analysis and modelling process.
+@fig-workflow: Workflow of the data analysis and modelling process.
 
 
 ## Data Selection
-In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland's records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. Table @tbl-data-sources introduces the key data used in this study. 
+In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland's records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. @tbl-data-sources introduces the key data used in this study. 
 
 
 
