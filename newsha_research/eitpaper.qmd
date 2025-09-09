@@ -1,0 +1,31 @@
+---
+title: "EIT Course Paper"
+author: "Newsha"
+format:
+  html: default
+  pdf: default
+execute:
+  echo: true      # show code
+  warning: true   # show warnings
+  error: true     # show errors
+jupyter: python3   # use Python kernel for all code
+---
+
+# Introduction
+
+This is a **bold** text and *italic* text example.  
+We can write equations like $E = mc^2$ in LaTeX.  
+
+## Subheading: Equations
+
+Displayed equation:  
+$$
+\int_0^1 x^2 dx = \frac{1}{3}
+$$
+
+## Subheading: Simple Python Code
+
+```{python}
+x = list(range(1, 11))
+mean_x = sum(x) / len(x)
+mean_x
