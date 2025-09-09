@@ -162,7 +162,44 @@ window.Quarto = {
 </section>
 <section id="data-selection" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="data-selection"><span class="header-section-number">3.2</span> Data Selection</h2>
-<p>In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland’s records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. Table 1 introduces the key data used in this study.</p>
+<p>In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland’s records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. <span class="citation" data-cites="tab:data-sources">(<a href="#ref-tab:data-sources" role="doc-biblioref"><strong>tab:data-sources?</strong></a>)</span> introduces the key data used in this study.</p>
+<p>Table 1: Key data sources utilised in this study {#tab:data-sources}</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 44%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data</th>
+<th>Description</th>
+<th>Provider</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Statistical grid (registry data)</td>
+<td>Finland’s statistical grid data includes a range of workplace, sociodemographic, and employment parameters that are published yearly with a geographic precision of 250 meters.</td>
+<td>Statistics Finland, 2018</td>
+</tr>
+<tr class="even">
+<td>General Transit Feed Specification data (GTFS)</td>
+<td>The routes, timetables, and other materials related to public transportation (PT) are utilised to compute the trip times and distances between origins and destinations. Includes details on traffic delays.</td>
+<td>Open data: transitfeeds.com, Transitfeeds (2019)</td>
+</tr>
+<tr class="odd">
+<td>Built environment data</td>
+<td>Information about structures, amenities, sites of interest, transportation infrastructure, etc. utilised in the development of the models for mode choice and travel demand.</td>
+<td>Open data: OSM</td>
+</tr>
+<tr class="even">
+<td>Road network data</td>
+<td>To calculate trip distances for all kinds of transportation (roads), a global open source database of the world’s infrastructure, including buildings and roads, is employed.</td>
+<td>Open data: Protomaps</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="data-limitation" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="data-limitation"><span class="header-section-number">3.3</span> Data Limitation</h2>

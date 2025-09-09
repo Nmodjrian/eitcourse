@@ -65,7 +65,17 @@ In Finland, sustainable transportation modes like walking, cycling, and public t
 
 
 ## Data Selection
-In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland's records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. Table 1 introduces the key data used in this study. 
+In the process of data selection, particular emphasis is placed on two primary datasets: Statistics Finland's records concerning households with school-age children (aged 7 to 12 years and aged 13 to 17 years), and Origin-Destination (OD) matrices outlining commuting patterns between residential areas. Focusing on households with school-age children provides valuable insights into the specific needs and dynamics of families with children, guiding urban planning and resource allocation efforts to support education and community well-being. Simultaneously, utilising OD matrices offers a comprehensive view of spatial movements and connectivity patterns within residential areas, shedding light on accessibility to essential amenities such as schools. By integrating these datasets, the analysis gains a holistic understanding, facilitating evidence-based decision-making processes aimed at optimising urban environments to better serve households with school-age children and promote their overall quality of life. @tab:data-sources introduces the key data used in this study. 
+
+Table 1: Key data sources utilised in this study {#tab:data-sources}
+
+| Data | Description | Provider |
+|------|-------------|----------|
+| Statistical grid (registry data) | Finland's statistical grid data includes a range of workplace, sociodemographic, and employment parameters that are published yearly with a geographic precision of 250 meters. | Statistics Finland, 2018 |
+| General Transit Feed Specification data (GTFS) | The routes, timetables, and other materials related to public transportation (PT) are utilised to compute the trip times and distances between origins and destinations. Includes details on traffic delays. | Open data: transitfeeds.com, Transitfeeds (2019) |
+| Built environment data | Information about structures, amenities, sites of interest, transportation infrastructure, etc. utilised in the development of the models for mode choice and travel demand. | Open data: OSM |
+| Road network data | To calculate trip distances for all kinds of transportation (roads), a global open source database of the world's infrastructure, including buildings and roads, is employed. | Open data: Protomaps |
+
 
 ## Data Limitation
 A notable limitation of the dataset pertains to the temporal aspect, as the population data is sourced from 2018. This temporal constraint introduces the possibility of inaccuracies or discrepancies, particularly regarding demographic shifts and changes in population structure that may have occurred since the data collection.
