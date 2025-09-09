@@ -56,9 +56,8 @@ In Finland, sustainable transportation modes like walking, cycling, and public t
 
 Our current project is made of three main steps from inputs to processing and the final output summarised in @fig-workflow.
 
-![](figures/workflow.png){#fig-workflow width=100%}
 
-@fig-workflow: Workflow of the data analysis and modelling process.
+![Workflow of the data analysis and modelling process](figures/workflow.png){#fig-workflow width=90%}
 
 
 ## Data Selection
